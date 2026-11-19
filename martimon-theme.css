@@ -12,7 +12,6 @@
 }
 
 #loginPage {
-    background-image: url('/Branding/Splashscreen?format=jpg&foregroundLayer=1');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -2461,7 +2460,6 @@ body.hideMainDrawer .headerRight {
 }
 
 .MuiAppBar-root a.MuiButton-root[href="#/"] .MuiButton-startIcon img {
-    content: url("/logoswap/image?v=1785700118755") !important;
     max-height: 34px !important;
     max-width: 160px !important;
     height: 34px !important;
@@ -2471,18 +2469,6 @@ body.hideMainDrawer .headerRight {
 
 .MuiAppBar-root a.MuiButton-root[href="#/"] {
     font-size: 0 !important;
-}
-
-.pageTitleWithLogo, .pageTitleWithDefaultLogo,
-.logoImage, .navDrawerLogo, .adminDrawerLogo {
-  background-image: url("/logoswap/image?v=1790627813130") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-color: transparent !important;
-}
-img[src*="banner-light"], img[src*="banner-dark"],
-img[src*="icon-transparent"], .imgLogoIcon {
-  content: url("/logoswap/image?v=1790627813130") !important;
 }
 
 .itemProgressBar:not(.playbackProgress):not(.transcodingProgress):not(.backgroundProgress) {
