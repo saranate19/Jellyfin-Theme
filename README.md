@@ -22,7 +22,7 @@ A monochrome, frosted-glass theme for Jellyfin 12, inspired by the look of watch
 2. Replace the contents with this line, using your own GitHub user and repo name:
 
    ```css
-   @import url("https://cdn.jsdelivr.net/gh/YOURUSER/martimon-theme@main/watched-style.css");
+   @import url("https://cdn.jsdelivr.net/gh/YOURUSER/martimon-theme@main/martimon-theme.css");
    ```
 
 3. Save, then reload the page with **Ctrl+F5**.
@@ -34,27 +34,27 @@ The `@import` line must be the first thing in the box. You can add your own over
 jsDelivr caches `@main` for up to about 12 hours. To refresh straight away, open:
 
 ```
-https://purge.jsdelivr.net/gh/YOURUSER/martimon-theme@main/watched-style.css
+https://purge.jsdelivr.net/gh/YOURUSER/martimon-theme@main/martimon-theme.css
 ```
 
 Or pin a release or commit (`@v1.0.0`, `@<commit-hash>`) and change it when you update.
 
 ### Without a CDN
 
-Paste the full contents of `watched-style.css` into the Custom CSS box instead.
+Paste the full contents of `martimon-theme.css` into the Custom CSS box instead.
 
 ## Optional plugins
 
-The theme styles these if they are installed. It works without them.
+The theme styles these if they are installed. It works without them. Follow each repo's README to install it.
 
-| Plugin | What it affects |
-| --- | --- |
-| Media Bar Enhanced | Home hero carousel |
-| KefinTweaks | Extra home sections |
-| Studio Hubs | Studio tiles |
-| Jellyfin Enhanced | Watchlist and extra buttons |
-| InPlayerEpisodePreview | Episode list inside the player |
-| JavaScript Injector | Needed to load some of the above |
+| Plugin | Author | Affects | Repo |
+| --- | --- | --- | --- |
+| Media Bar Enhanced | CodeDevMLH (fork of IAmParadox27's Media Bar) | Home hero carousel | [CodeDevMLH/jellyfin-plugin-media-bar-enhanced](https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced) |
+| KefinTweaks | ranaldsgift | Extra home sections, watchlist | [ranaldsgift/KefinTweaks](https://github.com/ranaldsgift/KefinTweaks) |
+| Studio Hubs | G-grbz (part of Jellyfin-MonWUI) | Studio tiles | [G-grbz/Jellyfin-MonWUI-Plugin](https://github.com/G-grbz/Jellyfin-MonWUI-Plugin) |
+| Jellyfin Enhanced | n00bcodr | Watchlist and extra buttons | [n00bcodr/Jellyfin-Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced) |
+| InPlayerEpisodePreview | Namo2 | Episode list inside the player | [Namo2/InPlayerEpisodePreview](https://github.com/Namo2/InPlayerEpisodePreview) |
+| JavaScript Injector | n00bcodr | Needed to load some of the above | [n00bcodr/Jellyfin-JavaScript-Injector](https://github.com/n00bcodr/Jellyfin-JavaScript-Injector) |
 
 ## Customising
 
@@ -73,8 +73,6 @@ Change them in your own Custom CSS below the `@import` line instead of editing t
 
 ## Known limitations
 
-- The Studio Hubs rail container is not styled yet.
-- Jellyfin's settings menu stays a list; a combined audio / subtitle / quality panel would need JavaScript.
 - Written against the Jellyfin 12 web client. Class names can change between versions.
 
 ## Troubleshooting
@@ -85,10 +83,7 @@ Change them in your own Custom CSS below the `@import` line instead of editing t
 
 ## Credits
 
-- Visual inspiration: watched.cx (no assets are copied)
-- Plugins by their respective authors, see the table above
-- Font: [DM Sans](https://fonts.google.com/specimen/DM+Sans), SIL Open Font License
-- Add any theme or CSS this was based on here
+Thanks to the authors of the plugins this theme styles: CodeDevMLH and IAmParadox27 (Media Bar), ranaldsgift (KefinTweaks), G-grbz (Studio Hubs / MonWUI), n00bcodr (Jellyfin Enhanced, JavaScript Injector) and Namo2 (InPlayerEpisodePreview).
 
 ## License
 
