@@ -1,4 +1,4 @@
-# Watched Style for Jellyfin
+# Martimon Theme for Jellyfin
 
 A monochrome, frosted-glass theme for Jellyfin 12, inspired by the look of watched.cx: dark background, white active pill, off-white PLAY button, full-bleed hero and a minimal video player.
 
@@ -22,7 +22,7 @@ A monochrome, frosted-glass theme for Jellyfin 12, inspired by the look of watch
 2. Replace the contents with this line, using your own GitHub user and repo name:
 
    ```css
-   @import url("https://cdn.jsdelivr.net/gh/YOURUSER/YOURREPO@main/watched-style.css");
+   @import url("https://cdn.jsdelivr.net/gh/YOURUSER/martimon-theme@main/watched-style.css");
    ```
 
 3. Save, then reload the page with **Ctrl+F5**.
@@ -34,7 +34,7 @@ The `@import` line must be the first thing in the box. You can add your own over
 jsDelivr caches `@main` for up to about 12 hours. To refresh straight away, open:
 
 ```
-https://purge.jsdelivr.net/gh/YOURUSER/YOURREPO@main/watched-style.css
+https://purge.jsdelivr.net/gh/YOURUSER/martimon-theme@main/watched-style.css
 ```
 
 Or pin a release or commit (`@v1.0.0`, `@<commit-hash>`) and change it when you update.
