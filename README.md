@@ -22,17 +22,13 @@ A monochrome, frosted-glass theme for Jellyfin 12.
 2. Replace the contents with this line, using your own GitHub user and repo name:
 
    ```css
-   @import url("https://cdn.jsdelivr.net/gh/saranate19/martimon-theme@main/martimon-theme.css");
+   @import url("https://cdn.jsdelivr.net/gh/saranate19/Jellyfin-Theme@main/martimon-theme.css");
    ```
 
 3. Save, then reload the page with **Ctrl+F5**.
 
 The `@import` line must be the first thing in the box. You can add your own overrides below it.
 
-
-### Without a CDN
-
-Paste the full contents of `martimon-theme.css` into the Custom CSS box instead.
 
 ## Optional plugins
 
@@ -59,6 +55,8 @@ Most colours and sizes are set as variables at the top of the file:
     --mediaBarHeight: 77vh;               /* hero height */
 }
 ```
+
+Change them in your own Custom CSS below the `@import` line instead of editing the hosted file, so updates don't overwrite your changes.
 
 ## Known limitations
 
