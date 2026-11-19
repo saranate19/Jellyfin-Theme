@@ -1,6 +1,6 @@
 # Martimon Theme for Jellyfin
 
-A monochrome, frosted-glass theme for Jellyfin 12, inspired by the look of watched.cx: dark background, white active pill, off-white PLAY button, full-bleed hero and a minimal video player.
+A monochrome, frosted-glass theme for Jellyfin 12.
 
 > Tested against Jellyfin 12.x with the plugins listed below. Not every plugin is required.
 
