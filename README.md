@@ -1,6 +1,6 @@
 # Martimon Theme for Jellyfin
 
-A monochrome, frosted-glass theme for Jellyfin 12, inspired by the look of watched.cx: dark background, white active pill, off-white PLAY button, full-bleed hero and a minimal video player.
+A monochrome, frosted-glass theme for Jellyfin 12.
 
 > Tested against Jellyfin 12.x with the plugins listed below. Not every plugin is required.
 
@@ -22,22 +22,13 @@ A monochrome, frosted-glass theme for Jellyfin 12, inspired by the look of watch
 2. Replace the contents with this line, using your own GitHub user and repo name:
 
    ```css
-   @import url("https://cdn.jsdelivr.net/gh/YOURUSER/martimon-theme@main/martimon-theme.css");
+   @import url("https://cdn.jsdelivr.net/gh/saranate19/martimon-theme@main/martimon-theme.css");
    ```
 
 3. Save, then reload the page with **Ctrl+F5**.
 
 The `@import` line must be the first thing in the box. You can add your own overrides below it.
 
-### Updating
-
-jsDelivr caches `@main` for up to about 12 hours. To refresh straight away, open:
-
-```
-https://purge.jsdelivr.net/gh/YOURUSER/martimon-theme@main/martimon-theme.css
-```
-
-Or pin a release or commit (`@v1.0.0`, `@<commit-hash>`) and change it when you update.
 
 ### Without a CDN
 
@@ -68,8 +59,6 @@ Most colours and sizes are set as variables at the top of the file:
     --mediaBarHeight: 77vh;               /* hero height */
 }
 ```
-
-Change them in your own Custom CSS below the `@import` line instead of editing the hosted file, so updates don't overwrite your changes.
 
 ## Known limitations
 
