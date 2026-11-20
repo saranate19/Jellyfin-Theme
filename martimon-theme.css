@@ -3853,3 +3853,22 @@ body:has(video.htmlvideoplayer) .dialogBackdropOpened {
         max-height: calc((100vh - 100px - 100px) / 0.7) !important;
     }
 }
+
+/* Jellyfin Enhanced "More with ..." / discovery section on detail pages: same page margins as the other sections */
+.layout-desktop #itemDetailPage .jellyseerr-discovery-section,
+.layout-desktop #itemDetailPage .detailVerticalSection.jellyseerr-discovery-section {
+    margin-left: var(--sidePadding) !important;
+    margin-right: var(--sidePadding) !important;
+    width: auto !important;
+    max-width: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+}
+
+.layout-desktop #itemDetailPage .jellyseerr-discovery-section .itemsContainer {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
