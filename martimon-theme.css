@@ -2959,8 +2959,12 @@ body.hideMainDrawer .headerRight {
     --heroPadBottom: 9vh;
 }
 
-.layout-desktop:has(#indexPage:not(.hide)) .MuiAppBar-root + div[aria-hidden="true"] {
+.layout-desktop:has(#indexPage:not(.hide) #homeTab.is-active) .MuiAppBar-root + div[aria-hidden="true"] {
     height: 0 !important;
+}
+
+.layout-desktop:has(#indexPage:not(.hide) .pageTabContent.is-active:not(#homeTab)) .MuiAppBar-root + div[aria-hidden="true"] {
+    height: var(--pageTopClear) !important;
 }
 
 .layout-desktop #slides-container {
@@ -3854,7 +3858,6 @@ body:has(video.htmlvideoplayer) .dialogBackdropOpened {
     }
 }
 
-/* Jellyfin Enhanced "More with ..." / discovery section on detail pages: same page margins as the other sections */
 .layout-desktop #itemDetailPage .jellyseerr-discovery-section,
 .layout-desktop #itemDetailPage .detailVerticalSection.jellyseerr-discovery-section {
     margin-left: var(--sidePadding) !important;
@@ -3873,22 +3876,11 @@ body:has(video.htmlvideoplayer) .dialogBackdropOpened {
     padding-right: 0 !important;
 }
 
-/* ---------- Plugin pages (Discover, Requests, Calendar ...): clear the floating header ----------
-   --pageTopClear = extra space above the page content. Raise it if the top is still hidden, lower it if the gap is too big. */
 :root {
-    --pageTopClear: 64px;
+    --pageTopClear: 84px;
     --calendarScale: 0.75;
 }
 
-.layout-desktop .page.type-interior.mainAnimatedPage[id^="je-"]:not(.hide),
-.layout-desktop .page.type-interior.mainAnimatedPage[id*="discover" i]:not(.hide),
-.layout-desktop .page.type-interior.mainAnimatedPage[id*="request" i]:not(.hide),
-.layout-desktop .page.type-interior.mainAnimatedPage[id*="seerr" i]:not(.hide) {
-    padding-top: var(--pageTopClear) !important;
-    box-sizing: border-box;
-}
-
-/* Jellyfin Enhanced calendar page: smaller. Change --calendarScale (1 = original size, 0.7 = smaller) */
 .layout-desktop .je-calendar-layout {
     zoom: var(--calendarScale);
 }
