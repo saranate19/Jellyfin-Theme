@@ -2963,8 +2963,10 @@ body.hideMainDrawer .headerRight {
     height: 0 !important;
 }
 
-.layout-desktop:has(#indexPage:not(.hide) .pageTabContent.is-active:not(#homeTab)) .MuiAppBar-root + div[aria-hidden="true"] {
-    height: var(--pageTopClear) !important;
+.tabContent.pageTabContent.is-active:not(#homeTab):has(> [class*="seerrfin"]),
+.tabContent.pageTabContent.is-active:not(#homeTab):has(> .sections) {
+    padding-top: var(--pageTopClear) !important;
+    box-sizing: border-box;
 }
 
 .layout-desktop #slides-container {
