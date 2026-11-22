@@ -22,7 +22,7 @@ A monochrome, frosted-glass theme for Jellyfin 12.
 2. Replace the contents with this line, using your own GitHub user and repo name:
 
    ```css
-   @import url("https://cdn.jsdelivr.net/gh/saranate19/Jellyfin-Theme@main/martimon-theme.css");
+   @import url("https://cdn.jsdelivr.net/gh/saranate19/Jellyfin-Theme@4ee518b/martimon-theme.css");
    ```
 
 3. Save, then reload the page with **Ctrl+F5**.
