@@ -3872,3 +3872,27 @@ body:has(video.htmlvideoplayer) .dialogBackdropOpened {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+/* ---------- Plugin pages (Discover, Requests, Calendar ...): clear the floating header ----------
+   --pageTopClear = extra space above the page content. Raise it if the top is still hidden, lower it if the gap is too big. */
+:root {
+    --pageTopClear: 64px;
+    --calendarScale: 0.75;
+}
+
+.layout-desktop .page.type-interior.mainAnimatedPage[id^="je-"]:not(.hide),
+.layout-desktop .page.type-interior.mainAnimatedPage[id*="discover" i]:not(.hide),
+.layout-desktop .page.type-interior.mainAnimatedPage[id*="request" i]:not(.hide),
+.layout-desktop .page.type-interior.mainAnimatedPage[id*="seerr" i]:not(.hide) {
+    padding-top: var(--pageTopClear) !important;
+    box-sizing: border-box;
+}
+
+/* Jellyfin Enhanced calendar page: smaller. Change --calendarScale (1 = original size, 0.7 = smaller) */
+.layout-desktop .je-calendar-layout {
+    zoom: var(--calendarScale);
+}
+
+.layout-desktop .je-calendar-title {
+    font-size: 1.5em !important;
+}
